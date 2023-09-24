@@ -1,26 +1,25 @@
 public class Person {
     private int age;
     private String name;
-    private String DNI;
-
+    private String dni;
     private boolean legal;
 
-    public Person(int age, String name, String DNI) {
+    public Person(int age, String name, String dni) {
         this.age = age;
         this.name = name;
-        this.DNI = DNI;
+        this.dni = dni;
     }
 
-    public String getDNI() {
-        return DNI;
+    public String getName() {
+        return name;
     }
 
     public int getAge() {
         return age;
     }
 
-    public String getName() {
-        return name;
+    public String getDni() {
+        return dni;
     }
 
     public boolean isLegal() {
@@ -35,7 +34,7 @@ public class Person {
         return "Person{" +
                 "age=" + age +
                 ", name='" + name + '\'' +
-                ", DNI='" + DNI + '\'' +
+                ", dni='" + dni + '\'' +
                 ", legal=" + legal +
                 '}';
     }
